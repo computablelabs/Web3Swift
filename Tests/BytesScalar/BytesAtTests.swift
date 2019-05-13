@@ -34,13 +34,7 @@ final class BytesAtTests: XCTestCase {
                 index: 1
             ).value()
         }.to(
-            equal(
-                Data(
-                    bytes: [
-                        3, 4, 5
-                    ]
-                )
-            ),
+            equal(Data([3, 4, 5])),
             description: "Bytes scalar at the specified index is expected to fetch"
         )
     }

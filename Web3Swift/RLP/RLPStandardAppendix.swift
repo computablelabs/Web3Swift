@@ -22,23 +22,14 @@ internal final class RLPStandardAppendix: RLPAppendix {
     internal func applying(to bytes: Data) throws -> Data {
         switch bytes.count {
         case 0...55:
-            return Data(
-                bytes: [
-                    UInt8(
-                        UInt8(bytes.count) + offset
-                    )
-                ]
-            ) + bytes
+            return Data([UInt8(UInt8(bytes.count) + offset)]) + bytes
         case 56...Int.max:
             return try Data(
-                bytes: [
-                    UInt8(bytes.count.unsignedByteWidth() + Int(offset) + 55)
-                ]
-            ) + TrimmedZeroPrefixBytes(
-                origin: IntegerBytes(
-                    value: bytes.count.bigEndian
-                )
-            ).value() + bytes
+                [UInt8(bytes.count.unsignedByteWidth() +
+                Int(offset) + 55)]) +
+                TrimmedZeroPrefixBytes(
+                    origin: IntegerBytes(
+                    value: bytes.count.bigEndian)).value() + bytes
         default:
             throw BytesLengthOverflow()
         }

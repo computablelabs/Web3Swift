@@ -114,9 +114,7 @@ public final class EthPrivateKey: PrivateKey {
             ) == 1 else {
                 throw PublicKeySerializationError()
             }
-            return Data(
-                bytes: publicKey.dropFirst()
-            )
+            return Data(publicKey.dropFirst())
         }
     }
 

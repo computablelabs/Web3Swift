@@ -25,17 +25,9 @@ final class BytesFromCompactHexStringTests: XCTestCase {
             ]
         ).forEach{ hex, bytes in
             expect{
-                try BytesFromCompactHexString(
-                    hex: SimpleString(
-                        string: hex
-                    )
-                ).value()
+                try BytesFromCompactHexString(hex: SimpleString(string: hex)).value()
             }.to(
-                equal(
-                    Data(
-                        bytes: bytes
-                    )
-                ),
+                equal(Data(bytes)),
                 description: "Non ambiguous prefixed hex string is expected to produce valid bytes array"
             )
         }
@@ -51,17 +43,9 @@ final class BytesFromCompactHexStringTests: XCTestCase {
             ]
         ).forEach{ hex, bytes in
             expect{
-                try BytesFromCompactHexString(
-                    hex: SimpleString(
-                        string: hex
-                    )
-                ).value()
+                try BytesFromCompactHexString(hex: SimpleString(string: hex)).value()
             }.to(
-                equal(
-                    Data(
-                        bytes: bytes
-                    )
-                ),
+                equal(Data(bytes)),
                 description: "Ambiguous prefixed hex string is expected to produce valid bytes array by appending a leading zero"
             )
         }
@@ -84,11 +68,7 @@ final class BytesFromCompactHexStringTests: XCTestCase {
                     )
                 ).value()
             }.to(
-                equal(
-                    Data(
-                        bytes: bytes
-                    )
-                ),
+                equal(Data(bytes)),
                 description: "Non ambiguous unprefixed hex string is expected to produce valid bytes array"
             )
         }
@@ -110,11 +90,7 @@ final class BytesFromCompactHexStringTests: XCTestCase {
                     )
                 ).value()
             }.to(
-                equal(
-                    Data(
-                        bytes: bytes
-                    )
-                ),
+                equal(Data(bytes)),
                 description: "Ambiguous prefixed hex string is expected to produce valid bytes array by appending a leading zero"
             )
         }

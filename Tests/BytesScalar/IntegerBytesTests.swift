@@ -29,10 +29,9 @@ final class IntegerBytesTests: XCTestCase {
             ).value()
         }.to(
             equal(
-                Data(
-                    bytes: [0x01] + Array(repeating: 0x00, count: MemoryLayout<Int>.size - 1)
-                )
-            ),
+                Data([0x01] +
+                    Array(repeating: 0x00,
+                          count: MemoryLayout<Int>.size - 1))),
             description: "Integer bytes are expected to respect endianness"
         )
     }
@@ -44,11 +43,7 @@ final class IntegerBytesTests: XCTestCase {
             ).value()
         }.to(
             equal(
-                Data(
-                    bytes: Array(repeating: 0x00, count: MemoryLayout<Int>.size - 1) + [0x01]
-                )
-
-            ),
+                Data(Array(repeating: 0x00, count: MemoryLayout<Int>.size - 1) + [0x01])),
             description: "Integer bytes are expected to respect endianness"
         )
     }

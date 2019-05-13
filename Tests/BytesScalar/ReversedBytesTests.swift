@@ -25,13 +25,7 @@ final class ReversedBytesTests: XCTestCase {
                 )
             ).value()
         }.to(
-            equal(
-                Data(
-                    bytes: [
-                        4, 3, 2, 1
-                    ]
-                )
-            ),
+            equal(Data([4, 3, 2, 1])),
             description: "Bytes are expected to be correctly reversed"
         )
     }

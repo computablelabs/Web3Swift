@@ -28,12 +28,8 @@ final class FixedLengthBytesTests: XCTestCase {
                 ).value()
             }.to(
                 equal(
-                    Data(
-                        bytes: Array(
-                            repeating: 0x00,
-                            count: length
-                        )
-                    )
+                    Data(Array(repeating: 0x00,
+                               count: length))
                 ),
                 description: "Fixed length bytes are expected to persist"
             )

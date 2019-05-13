@@ -44,8 +44,7 @@ public final class ASCIIStringBytes: BytesScalar {
     `DescribedError` if something went wrong. For instance if string consists of some elements that are not ascii.
     */
     public func value() throws -> Data {
-        return try Data(
-            bytes: string.value()
+        return try Data(string.value()
                 .unicodeScalars
                 .map{ scalar in
                     guard scalar.isASCII else {
@@ -56,7 +55,6 @@ public final class ASCIIStringBytes: BytesScalar {
                     return UInt8(
                         ascii: scalar
                     )
-                }
-        )
+                })
     }
 }

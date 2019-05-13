@@ -23,9 +23,7 @@ final class ABIBooleanTests: XCTestCase {
             ).value()
         }.to(
             equal(
-                Data(
-                    bytes: Array<UInt8>(repeating: 0x00, count: 31) + [0x01]
-                )
+                Data(Array<UInt8>(repeating: 0x00, count: 31) + [0x01])
             ),
             description: "True is expected to be equal to ABI encoding of 1"
         )
@@ -40,9 +38,7 @@ final class ABIBooleanTests: XCTestCase {
             ).value()
         }.to(
             equal(
-                Data(
-                    bytes: Array<UInt8>(repeating: 0x00, count: 32)
-                )
+                Data(Array<UInt8>(repeating: 0x00, count: 32))
             ),
             description: "True is expected to be equal to ABI encoding of 0"
         )

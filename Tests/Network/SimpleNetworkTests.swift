@@ -52,9 +52,7 @@ final class SimpleNetworkTests: XCTestCase {
                         fatalError("id is irrelevant for this test")
                     },
                     call: { _, _ in
-                        return Data(
-                            bytes: call
-                        )
+                        return Data(call)
                     }
                 ).call(
                     method: "method is irrelevant for this test",

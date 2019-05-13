@@ -39,9 +39,7 @@ public final class SimpleBytes: BytesScalar {
     public convenience init(bytes: CollectionScalar<UInt8>) {
         self.init(
             bytes: {
-                try Data(
-                    bytes: bytes.value()
-                )
+                try Data(bytes.value())
             }
         )
     }

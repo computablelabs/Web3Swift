@@ -22,11 +22,7 @@ final class EthRLPTests: XCTestCase {
                 )
             ).value()
         }.to(
-            equal(
-                Data(
-                    bytes: [0x80]
-                )
-            ),
+            equal(Data([0x80])),
             description: "EthRLP encoded 0 is expected to match empty byte RLP encoding (0x80)"
         )
     }
@@ -51,11 +47,7 @@ final class EthRLPTests: XCTestCase {
                     )
                 ).value()
             }.to(
-                equal(
-                    Data(
-                        bytes: bytes
-                    )
-                ),
+                equal(Data(bytes)),
                 description: "Value \(value) is expected to be encoded as \(bytes)"
             )
         }

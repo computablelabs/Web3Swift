@@ -15,30 +15,11 @@ import Quick
 final class TrailingCompactBytesTests: XCTestCase {
 
     func testCompactBytesPersist() {
-        Array<
-            (
-                BytesScalar,
-                Data
-            )
-        >(
-            [
-                (
-                    SimpleBytes(
-                        bytes: [0]
-                    ),
-                    Data(
-                        bytes: [0]
-                    )
-                ),
-                (
-                    SimpleBytes(
-                        bytes: [0, 1, 0, 1]
-                    ),
-                    Data(
-                        bytes: [0, 1, 0, 1]
-                    )
-                )
-            ]
+        Array<(BytesScalar, Data)>(
+            [(SimpleBytes(bytes: [0]),
+              Data([0])),
+            (SimpleBytes(bytes: [0, 1, 0, 1]),
+             Data([0, 1, 0, 1]))]
         ).forEach{ scalar, bytes in
             expect{
                 try TrailingCompactBytes(
@@ -54,30 +35,11 @@ final class TrailingCompactBytesTests: XCTestCase {
     }
 
     func testBytesAreCompactedCorrectly() {
-        Array<
-            (
-                BytesScalar,
-                Data
-            )
-        >(
-            [
-                (
-                    SimpleBytes(
-                        bytes: [0, 0, 0]
-                    ),
-                    Data(
-                        bytes: [0]
-                    )
-                ),
-                (
-                    SimpleBytes(
-                        bytes: [0, 1, 0, 1, 0, 0, 0]
-                    ),
-                    Data(
-                        bytes: [0, 1, 0, 1]
-                    )
-                )
-            ]
+        Array<(BytesScalar, Data)>(
+            [(SimpleBytes(bytes: [0, 0, 0]),
+              Data([0])),
+             (SimpleBytes(bytes: [0, 1, 0, 1, 0, 0, 0]),
+              Data([0, 1, 0, 1]))]
         ).forEach{ scalar, bytes in
             expect{
                 try TrailingCompactBytes(

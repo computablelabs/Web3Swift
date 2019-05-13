@@ -26,11 +26,7 @@ final class LastBytesTests: XCTestCase {
             ).value()
         }.to(
             equal(
-                Data(
-                    bytes: [
-                        0x03, 0x04, 0x05
-                    ]
-                )
+                Data([0x03, 0x04, 0x05])
             )
         )
     }
@@ -47,11 +43,7 @@ final class LastBytesTests: XCTestCase {
             ).value()
         }.to(
             equal(
-                Data(
-                    bytes: [
-                        0x01, 0x02
-                    ]
-                )
+                Data([0x01, 0x02])
             )
         )
     }

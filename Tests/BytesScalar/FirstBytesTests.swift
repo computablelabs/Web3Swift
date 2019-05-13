@@ -26,11 +26,7 @@ final class FirstBytesTests: XCTestCase {
             ).value()
         }.to(
             equal(
-                Data(
-                    bytes: [
-                        0x01, 0x02, 0x03
-                    ]
-                )
+                Data([0x01, 0x02, 0x03])
             )
         )
     }
@@ -47,11 +43,7 @@ final class FirstBytesTests: XCTestCase {
             ).value()
         }.to(
             equal(
-                Data(
-                    bytes: [
-                        0x01, 0x02
-                    ]
-                )
+                Data([0x01, 0x02])
             )
         )
     }

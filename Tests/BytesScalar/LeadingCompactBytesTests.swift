@@ -34,7 +34,7 @@ final class TrimmedZeroPrefixBytesTests: XCTestCase {
                 ).value()
             }.to(
                 equal(
-                    Data(bytes: bytes)
+                    Data(bytes)
                 ),
                 description: "Already compact bytes are expected to persist"
             )
@@ -60,7 +60,7 @@ final class TrimmedZeroPrefixBytesTests: XCTestCase {
                 ).value()
             }.to(
                 equal(
-                    Data(bytes: bytes)
+                    Data(bytes)
                 ),
                 description: "Already compact bytes are expected to persist"
             )

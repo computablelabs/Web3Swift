@@ -106,8 +106,8 @@ public final class SECP256k1Signature: ECRecoverableSignature {
                 )
             }
             return (
-                r: Data(bytes: rs.prefix(32)),
-                s: Data(bytes: rs.suffix(32)),
+                r: Data(rs.prefix(32)),
+                s: Data(rs.suffix(32)),
                 recoveryID: UInt8(recoveryID)
             )
         }
@@ -128,13 +128,7 @@ public final class SECP256k1Signature: ECRecoverableSignature {
     ) {
         self.init(
             digest: SimpleBytes{
-                try Data(
-                    bytes: hashFunction(
-                        Array<UInt8>(
-                            message.value()
-                        )
-                    )
-                )
+                try Data(hashFunction(Array<UInt8>(message.value())))
             },
             privateKey: privateKey
         )

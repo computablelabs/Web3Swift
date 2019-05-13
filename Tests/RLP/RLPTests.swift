@@ -17,16 +17,10 @@ final class RLPTests: XCTestCase {
 
     func testDog() {
         expect{
-            try SimpleRLP(
-                bytes: Data(
-                    bytes: Array("dog".utf8)
-                )
-            ).value()
+            try SimpleRLP(bytes: Data(Array("dog".utf8))).value()
         }.to(
             equal(
-                Data(
-                    bytes: [0x83] + Array("dog".utf8)
-                )
+                Data([0x83] + Array("dog".utf8))
             )
         )
     }
@@ -36,22 +30,13 @@ final class RLPTests: XCTestCase {
             try expect{
                 try SimpleRLP(
                     rlps: [
-                        SimpleRLP(
-                            bytes: Data(
-                                bytes: Array("cat".utf8)
-                            )
-                        ),
-                        SimpleRLP(
-                            bytes: Data(
-                                bytes: Array("dog".utf8)
-                            )
-                        ),
+                        SimpleRLP(bytes: Data(Array("cat".utf8))),
+                        SimpleRLP(bytes: Data(Array("dog".utf8))),
                     ]
                 ).value()
             }.to(
                 equal(
-                    Data(
-                        bytes: [
+                    Data([
                             0xc8,
                             0x83,
                             "c".utf8.single(),
@@ -61,8 +46,7 @@ final class RLPTests: XCTestCase {
                             "d".utf8.single(),
                             "o".utf8.single(),
                             "g".utf8.single()
-                        ]
-                    )
+                        ])
                 )
             )
         }.toNot(
@@ -80,13 +64,7 @@ final class RLPTests: XCTestCase {
                 )
             ).value()
         }.to(
-            equal(
-                Data(
-                    bytes: [
-                        0x00
-                    ]
-                )
-            )
+            equal(Data([0x00]))
         )
     }
 
@@ -100,13 +78,7 @@ final class RLPTests: XCTestCase {
                 )
             ).value()
         }.to(
-            equal(
-                Data(
-                    bytes: [
-                        0x0f
-                    ]
-                )
-            )
+            equal(Data([0x0f]))
         )
     }
 
@@ -120,13 +92,7 @@ final class RLPTests: XCTestCase {
                 )
             ).value()
         }.to(
-            equal(
-                Data(
-                    bytes: [
-                        0x7f
-                    ]
-                )
-            )
+            equal(Data([0x7f]))
         )
     }
 
@@ -140,14 +106,7 @@ final class RLPTests: XCTestCase {
                 )
             ).value()
         }.to(
-            equal(
-                Data(
-                    bytes: [
-                        0x81,
-                        0x80
-                    ]
-                )
-            )
+            equal(Data([0x81, 0x80]))
         )
     }
 
@@ -162,12 +121,7 @@ final class RLPTests: XCTestCase {
             ).value()
         }.to(
             equal(
-                Data(
-                    bytes: [
-                        0x81,
-                        0xff
-                    ]
-                )
+                Data([0x81, 0xff])
             )
         )
     }
@@ -182,15 +136,7 @@ final class RLPTests: XCTestCase {
                 )
             ).value()
         }.to(
-            equal(
-                Data(
-                    bytes: [
-                        0x82,
-                        0x01,
-                        0x00
-                    ]
-                )
-            )
+            equal(Data([0x82, 0x01, 0x00]))
         )
     }
 
@@ -205,13 +151,7 @@ final class RLPTests: XCTestCase {
             ).value()
         }.to(
             equal(
-                Data(
-                    bytes: [
-                        0x82,
-                        0x04,
-                        0x00
-                    ]
-                )
+                Data([0x82, 0x04, 0x00])
             )
         )
     }
@@ -248,35 +188,16 @@ final class RLPTests: XCTestCase {
             ).value()
         }.to(
             equal(
-                Data(
-                    bytes: [
-                        0xc7,
-                        0xc0,
-                        0xc1,
-                        0xc0,
-                        0xc3,
-                        0xc0,
-                        0xc1,
-                        0xc0
-                    ]
-                )
+                Data([0xc7, 0xc0, 0xc1, 0xc0, 0xc3, 0xc0, 0xc1, 0xc0])
             )
         )
     }
 
     func testLorum() {
         expect(
-            try SimpleRLP(
-                bytes: Data(
-                    bytes: Array("Lorem ipsum dolor sit amet, consectetur adipisicing elit".utf8)
-                )
-            ).value()
+            try SimpleRLP(bytes: Data(Array("Lorem ipsum dolor sit amet, consectetur adipisicing elit".utf8))).value()
         ).to(
-            equal(
-                Data(
-                    bytes: [0xb8, 0x38] + Array("Lorem ipsum dolor sit amet, consectetur adipisicing elit".utf8)
-                )
-            )
+            equal(Data([0xb8, 0x38] + Array("Lorem ipsum dolor sit amet, consectetur adipisicing elit".utf8)))
         )
     }
 
@@ -287,17 +208,9 @@ final class RLPTests: XCTestCase {
         )!
         // swiftlint:disable:previous force_unwrapping
         expect{
-            try SimpleRLP(
-                bytes: Data(
-                    bytes: Array(string.utf8)
-                )
-            ).value()
+            try SimpleRLP(bytes: Data(Array(string.utf8))).value()
         }.to(
-            equal(
-                Data(
-                    bytes: [0xb9, 0x04, 0x00] + Array(string.utf8)
-                )
-            )
+            equal(Data([0xb9, 0x04, 0x00] + Array(string.utf8)))
         )
     }
 

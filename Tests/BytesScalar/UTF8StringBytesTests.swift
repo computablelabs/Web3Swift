@@ -20,11 +20,7 @@ final class UTF8StringBytesTests: XCTestCase {
                 string: "Hello world"
             ).value()
         }.to(
-            equal(
-                Data(
-                    bytes: Array("Hello world".utf8)
-                )
-            )
+            equal(Data(Array("Hello world".utf8)))
         )
     }
 
