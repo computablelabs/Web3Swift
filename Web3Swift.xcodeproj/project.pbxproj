@@ -8,18 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BE28B6F52289909D00A7FBE4 /* Web3Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = BE28B6F32289909D00A7FBE4 /* Web3Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE28B7CB228991BB00A7FBE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B700228991BB00A7FBE4 /* ViewController.swift */; };
-		BE28B7CF228991BB00A7FBE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B706228991BB00A7FBE4 /* AppDelegate.swift */; };
-		BE28B85C228991BB00A7FBE4 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7B3228991BB00A7FBE4 /* URL.swift */; };
-		BE28B85D228991BB00A7FBE4 /* GanacheLocalNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7B8228991BB00A7FBE4 /* GanacheLocalNetwork.swift */; };
-		BE28B85E228991BB00A7FBE4 /* MainnetAlchemyNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7B9228991BB00A7FBE4 /* MainnetAlchemyNetwork.swift */; };
-		BE28B85F228991BB00A7FBE4 /* MainnetMetamaskNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7BA228991BB00A7FBE4 /* MainnetMetamaskNetwork.swift */; };
-		BE28B860228991BB00A7FBE4 /* SimpleActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7BC228991BB00A7FBE4 /* SimpleActor.swift */; };
-		BE28B861228991BB00A7FBE4 /* Tim.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7BD228991BB00A7FBE4 /* Tim.swift */; };
-		BE28B862228991BB00A7FBE4 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7BE228991BB00A7FBE4 /* Actor.swift */; };
-		BE28B863228991BB00A7FBE4 /* Alice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7BF228991BB00A7FBE4 /* Alice.swift */; };
-		BE28B864228991BB00A7FBE4 /* Bob.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7C0228991BB00A7FBE4 /* Bob.swift */; };
-		BE28B866228991BB00A7FBE4 /* UnknownError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7C3228991BB00A7FBE4 /* UnknownError.swift */; };
 		BE28B93C228991D800A7FBE4 /* ComputedContractAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B869228991D500A7FBE4 /* ComputedContractAddress.swift */; };
 		BE28B93D228991D800A7FBE4 /* EthAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B86A228991D500A7FBE4 /* EthAddress.swift */; };
 		BE28B93E228991D800A7FBE4 /* EncodedABITuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B86C228991D500A7FBE4 /* EncodedABITuple.swift */; };
@@ -201,7 +189,6 @@
 		BE28B9EE228991D800A7FBE4 /* ArithmeticFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B939228991D800A7FBE4 /* ArithmeticFunctions.swift */; };
 		BE28B9EF228991D800A7FBE4 /* UnsignedNumbersDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B93A228991D800A7FBE4 /* UnsignedNumbersDifference.swift */; };
 		BE28B9F0228991D800A7FBE4 /* UnsignedNumbersProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B93B228991D800A7FBE4 /* UnsignedNumbersProduct.swift */; };
-		BE28BA052289A32500A7FBE4 /* Web3SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28BA042289A32500A7FBE4 /* Web3SwiftTests.swift */; };
 		BE28BA0D2289A33600A7FBE4 /* ObjectParameterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B790228991BB00A7FBE4 /* ObjectParameterTests.swift */; };
 		BE28BA0E2289A33900A7FBE4 /* BytesParameterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B791228991BB00A7FBE4 /* BytesParameterTests.swift */; };
 		BE28BA0F2289A33900A7FBE4 /* QuantityParameterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B792228991BB00A7FBE4 /* QuantityParameterTests.swift */; };
@@ -343,6 +330,20 @@
 		BE28BAA42289EEE800A7FBE4 /* GetTransactionsCountProcedureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B721228991BB00A7FBE4 /* GetTransactionsCountProcedureTests.swift */; };
 		BE28BAA52289EEE800A7FBE4 /* GetGasPriceProcedureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B722228991BB00A7FBE4 /* GetGasPriceProcedureTests.swift */; };
 		BE28BAA62289EEE800A7FBE4 /* VerifiedProcedureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B723228991BB00A7FBE4 /* VerifiedProcedureTests.swift */; };
+		BE28BAB02289FB8F00A7FBE4 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7B3228991BB00A7FBE4 /* URL.swift */; };
+		BE28BAB12289FB9300A7FBE4 /* GanacheLocalNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7B8228991BB00A7FBE4 /* GanacheLocalNetwork.swift */; };
+		BE28BAB22289FB9300A7FBE4 /* MainnetAlchemyNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7B9228991BB00A7FBE4 /* MainnetAlchemyNetwork.swift */; };
+		BE28BAB32289FB9300A7FBE4 /* MainnetMetamaskNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7BA228991BB00A7FBE4 /* MainnetMetamaskNetwork.swift */; };
+		BE28BAB42289FB9800A7FBE4 /* SimpleActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7BC228991BB00A7FBE4 /* SimpleActor.swift */; };
+		BE28BAB52289FB9800A7FBE4 /* Tim.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7BD228991BB00A7FBE4 /* Tim.swift */; };
+		BE28BAB62289FB9800A7FBE4 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7BE228991BB00A7FBE4 /* Actor.swift */; };
+		BE28BAB72289FB9800A7FBE4 /* Alice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7BF228991BB00A7FBE4 /* Alice.swift */; };
+		BE28BAB82289FB9800A7FBE4 /* Bob.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7C0228991BB00A7FBE4 /* Bob.swift */; };
+		BE28BAB92289FB9C00A7FBE4 /* UnknownError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7C3228991BB00A7FBE4 /* UnknownError.swift */; };
+		BE28BABA2289FE3B00A7FBE4 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE28BA152289A6B700A7FBE4 /* CryptoSwift.framework */; };
+		BE28BABB2289FE7100A7FBE4 /* BigInt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE28BA132289A64B00A7FBE4 /* BigInt.framework */; };
+		BE28BABC2289FE7600A7FBE4 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE28BA112289A4E900A7FBE4 /* SwiftyJSON.framework */; };
+		BE28BABD2289FE7D00A7FBE4 /* secp256k1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE28BA172289A75F00A7FBE4 /* secp256k1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -359,13 +360,6 @@
 		BE28B6F02289909D00A7FBE4 /* Web3Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Web3Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE28B6F32289909D00A7FBE4 /* Web3Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Web3Swift.h; sourceTree = "<group>"; };
 		BE28B6F42289909D00A7FBE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE28B700228991BB00A7FBE4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BE28B702228991BB00A7FBE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		BE28B704228991BB00A7FBE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BE28B705228991BB00A7FBE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BE28B706228991BB00A7FBE4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE28B707228991BB00A7FBE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE28B709228991BB00A7FBE4 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		BE28B70C228991BB00A7FBE4 /* IntegersSumTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegersSumTests.swift; sourceTree = "<group>"; };
 		BE28B70D228991BB00A7FBE4 /* IntegersQuotientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegersQuotientTests.swift; sourceTree = "<group>"; };
 		BE28B70E228991BB00A7FBE4 /* BytesAsIntegerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BytesAsIntegerTests.swift; sourceTree = "<group>"; };
@@ -491,7 +485,6 @@
 		BE28B7A0228991BB00A7FBE4 /* EthContractCreationBytesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthContractCreationBytesTests.swift; sourceTree = "<group>"; };
 		BE28B7A2228991BB00A7FBE4 /* EthAutoAccountIT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthAutoAccountIT.swift; sourceTree = "<group>"; };
 		BE28B7A4228991BB00A7FBE4 /* EthGasEstimateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthGasEstimateTests.swift; sourceTree = "<group>"; };
-		BE28B7A5228991BB00A7FBE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE28B7A7228991BB00A7FBE4 /* UnsignedNumbersSumTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsignedNumbersSumTests.swift; sourceTree = "<group>"; };
 		BE28B7A8228991BB00A7FBE4 /* UnsignedNumbersQuotientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsignedNumbersQuotientTests.swift; sourceTree = "<group>"; };
 		BE28B7A9228991BB00A7FBE4 /* HexAsDecimalStringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexAsDecimalStringTests.swift; sourceTree = "<group>"; };
@@ -503,7 +496,6 @@
 		BE28B7B0228991BB00A7FBE4 /* EthPrivateKeyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthPrivateKeyTests.swift; sourceTree = "<group>"; };
 		BE28B7B1228991BB00A7FBE4 /* PrivateKeyAddressTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKeyAddressTests.swift; sourceTree = "<group>"; };
 		BE28B7B3228991BB00A7FBE4 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
-		BE28B7B4228991BB00A7FBE4 /* Web3SwiftTests.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Web3SwiftTests.xcodeproj; sourceTree = "<group>"; };
 		BE28B7B8228991BB00A7FBE4 /* GanacheLocalNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanacheLocalNetwork.swift; sourceTree = "<group>"; };
 		BE28B7B9228991BB00A7FBE4 /* MainnetAlchemyNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainnetAlchemyNetwork.swift; sourceTree = "<group>"; };
 		BE28B7BA228991BB00A7FBE4 /* MainnetMetamaskNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainnetMetamaskNetwork.swift; sourceTree = "<group>"; };
@@ -512,9 +504,7 @@
 		BE28B7BE228991BB00A7FBE4 /* Actor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
 		BE28B7BF228991BB00A7FBE4 /* Alice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alice.swift; sourceTree = "<group>"; };
 		BE28B7C0228991BB00A7FBE4 /* Bob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bob.swift; sourceTree = "<group>"; };
-		BE28B7C1228991BB00A7FBE4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		BE28B7C3228991BB00A7FBE4 /* UnknownError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnknownError.swift; sourceTree = "<group>"; };
-		BE28B7C4228991BB00A7FBE4 /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		BE28B869228991D500A7FBE4 /* ComputedContractAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputedContractAddress.swift; sourceTree = "<group>"; };
 		BE28B86A228991D500A7FBE4 /* EthAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthAddress.swift; sourceTree = "<group>"; };
 		BE28B86C228991D500A7FBE4 /* EncodedABITuple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodedABITuple.swift; sourceTree = "<group>"; };
@@ -699,7 +689,6 @@
 		BE28B9F6228993DD00A7FBE4 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		BE28B9F92289A03300A7FBE4 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		BE28BA022289A32500A7FBE4 /* Web3SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Web3SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE28BA042289A32500A7FBE4 /* Web3SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3SwiftTests.swift; sourceTree = "<group>"; };
 		BE28BA062289A32500A7FBE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE28BA112289A4E900A7FBE4 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		BE28BA132289A64B00A7FBE4 /* BigInt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BigInt.framework; path = Carthage/Build/iOS/BigInt.framework; sourceTree = "<group>"; };
@@ -723,8 +712,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE28BABD2289FE7D00A7FBE4 /* secp256k1.framework in Frameworks */,
+				BE28BABB2289FE7100A7FBE4 /* BigInt.framework in Frameworks */,
 				BE28BA3A2289ED7100A7FBE4 /* Nimble.framework in Frameworks */,
 				BE28BA3B2289ED7100A7FBE4 /* Quick.framework in Frameworks */,
+				BE28BABC2289FE7600A7FBE4 /* SwiftyJSON.framework in Frameworks */,
+				BE28BABA2289FE3B00A7FBE4 /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,9 +727,7 @@
 		BE28B6E62289909D00A7FBE4 = {
 			isa = PBXGroup;
 			children = (
-				BE28B6FE228991BB00A7FBE4 /* Example */,
 				BE28B6F22289909D00A7FBE4 /* Web3Swift */,
-				BE28B9FD2289A28400A7FBE4 /* Tests */,
 				BE28BA032289A32500A7FBE4 /* Web3SwiftTests */,
 				BE28B6F12289909D00A7FBE4 /* Products */,
 				BE28B9F3228993DD00A7FBE4 /* Frameworks */,
@@ -788,44 +779,6 @@
 				BE28B6F42289909D00A7FBE4 /* Info.plist */,
 			);
 			path = Web3Swift;
-			sourceTree = "<group>";
-		};
-		BE28B6FE228991BB00A7FBE4 /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				BE28B7B4228991BB00A7FBE4 /* Web3SwiftTests.xcodeproj */,
-				BE28B6FF228991BB00A7FBE4 /* Web3Swift */,
-				BE28B709228991BB00A7FBE4 /* .swiftlint.yml */,
-				BE28B70A228991BB00A7FBE4 /* Tests */,
-				BE28B7A5228991BB00A7FBE4 /* Info.plist */,
-				BE28B7B2228991BB00A7FBE4 /* Extensions */,
-				BE28B7B7228991BB00A7FBE4 /* Networks */,
-				BE28B7BB228991BB00A7FBE4 /* Actors */,
-				BE28B7C1228991BB00A7FBE4 /* Podfile */,
-				BE28B7C2228991BB00A7FBE4 /* Errors */,
-				BE28B7C4228991BB00A7FBE4 /* Podfile.lock */,
-			);
-			path = Example;
-			sourceTree = "<group>";
-		};
-		BE28B6FF228991BB00A7FBE4 /* Web3Swift */ = {
-			isa = PBXGroup;
-			children = (
-				BE28B700228991BB00A7FBE4 /* ViewController.swift */,
-				BE28B701228991BB00A7FBE4 /* LaunchScreen.xib */,
-				BE28B703228991BB00A7FBE4 /* Main.storyboard */,
-				BE28B705228991BB00A7FBE4 /* Images.xcassets */,
-				BE28B706228991BB00A7FBE4 /* AppDelegate.swift */,
-				BE28B707228991BB00A7FBE4 /* Info.plist */,
-			);
-			path = Web3Swift;
-			sourceTree = "<group>";
-		};
-		BE28B70A228991BB00A7FBE4 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 		BE28B70B228991BB00A7FBE4 /* IntegerScalar */ = {
@@ -1620,9 +1573,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BE28B9FD2289A28400A7FBE4 /* Tests */ = {
+		BE28BA032289A32500A7FBE4 /* Web3SwiftTests */ = {
 			isa = PBXGroup;
 			children = (
+				BE28B7B2228991BB00A7FBE4 /* Extensions */,
+				BE28B7B7228991BB00A7FBE4 /* Networks */,
+				BE28B7BB228991BB00A7FBE4 /* Actors */,
+				BE28B7C2228991BB00A7FBE4 /* Errors */,
 				BE28B765228991BB00A7FBE4 /* ABI */,
 				BE28B7A1228991BB00A7FBE4 /* Account */,
 				BE28B794228991BB00A7FBE4 /* Address */,
@@ -1649,14 +1606,6 @@
 				BE28B781228991BB00A7FBE4 /* TransactionReceipt */,
 				BE28B77D228991BB00A7FBE4 /* Transactions */,
 				BE28B799228991BB00A7FBE4 /* TransactionBytes */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		BE28BA032289A32500A7FBE4 /* Web3SwiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				BE28BA042289A32500A7FBE4 /* Web3SwiftTests.swift */,
 				BE28BA062289A32500A7FBE4 /* Info.plist */,
 			);
 			path = Web3SwiftTests;
@@ -1805,6 +1754,10 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/secp256k1.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/BigInt.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -1812,6 +1765,10 @@
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nimble.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Quick.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/CryptoSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyJSON.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/secp256k1.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BigInt.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1824,11 +1781,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE28B7CF228991BB00A7FBE4 /* AppDelegate.swift in Sources */,
 				BE28B944228991D800A7FBE4 /* DecodedABINumber.swift in Sources */,
 				BE28B946228991D800A7FBE4 /* DecodedABIDynamicCollection.swift in Sources */,
 				BE28B9BB228991D800A7FBE4 /* HexPrefixedString.swift in Sources */,
-				BE28B864228991BB00A7FBE4 /* Bob.swift in Sources */,
 				BE28B9B7228991D800A7FBE4 /* EthNetwork.swift in Sources */,
 				BE28B9E9228991D800A7FBE4 /* UnsignedNumbersExponentiation.swift in Sources */,
 				BE28B9AC228991D800A7FBE4 /* ElementAt.swift in Sources */,
@@ -1864,7 +1819,6 @@
 				BE28B981228991D800A7FBE4 /* PrivateKey.swift in Sources */,
 				BE28B9EF228991D800A7FBE4 /* UnsignedNumbersDifference.swift in Sources */,
 				BE28B953228991D800A7FBE4 /* EncodedABIFunction.swift in Sources */,
-				BE28B866228991BB00A7FBE4 /* UnknownError.swift in Sources */,
 				BE28B99D228991D800A7FBE4 /* BigUInt.swift in Sources */,
 				BE28B9B8228991D800A7FBE4 /* NetworkID.swift in Sources */,
 				BE28B9B3228991D800A7FBE4 /* GethNetwork.swift in Sources */,
@@ -1882,10 +1836,8 @@
 				BE28B967228991D800A7FBE4 /* NumberHex.swift in Sources */,
 				BE28B974228991D800A7FBE4 /* EthParameter.swift in Sources */,
 				BE28B9CD228991D800A7FBE4 /* CachedInteger.swift in Sources */,
-				BE28B85E228991BB00A7FBE4 /* MainnetAlchemyNetwork.swift in Sources */,
 				BE28B952228991D800A7FBE4 /* EncodedContract.swift in Sources */,
 				BE28B9DF228991D800A7FBE4 /* TransactionHash.swift in Sources */,
-				BE28B863228991BB00A7FBE4 /* Alice.swift in Sources */,
 				BE28B96A228991D800A7FBE4 /* FirstByte.swift in Sources */,
 				BE28B984228991D800A7FBE4 /* Account.swift in Sources */,
 				BE28B9D0228991D800A7FBE4 /* IsNegativeEthInteger.swift in Sources */,
@@ -1894,7 +1846,6 @@
 				BE28B9CE228991D800A7FBE4 /* IntegersSum.swift in Sources */,
 				BE28B9E0228991D800A7FBE4 /* EthTransactionHash.swift in Sources */,
 				BE28B98D228991D800A7FBE4 /* ContractCallProcedure.swift in Sources */,
-				BE28B85C228991BB00A7FBE4 /* URL.swift in Sources */,
 				BE28B9BA228991D800A7FBE4 /* PrefixedHexString.swift in Sources */,
 				BE28B957228991D800A7FBE4 /* ReversedBytes.swift in Sources */,
 				BE28B97D228991D800A7FBE4 /* BlockChainState.swift in Sources */,
@@ -1909,23 +1860,19 @@
 				BE28B9CB228991D800A7FBE4 /* NaturalInteger.swift in Sources */,
 				BE28B9CC228991D800A7FBE4 /* BigEndianInteger.swift in Sources */,
 				BE28B9A8228991D800A7FBE4 /* CollectionSuffix.swift in Sources */,
-				BE28B861228991BB00A7FBE4 /* Tim.swift in Sources */,
 				BE28B993228991D800A7FBE4 /* TransactionReceiptProcedure.swift in Sources */,
 				BE28B9D9228991D800A7FBE4 /* And.swift in Sources */,
 				BE28B982228991D800A7FBE4 /* EthPrivateKey.swift in Sources */,
 				BE28B9E7228991D800A7FBE4 /* EthTransactionBytes.swift in Sources */,
 				BE28B94C228991D800A7FBE4 /* ABIAddress.swift in Sources */,
-				BE28B860228991BB00A7FBE4 /* SimpleActor.swift in Sources */,
 				BE28B941228991D800A7FBE4 /* DecodedABIAddress.swift in Sources */,
 				BE28B9E2228991D800A7FBE4 /* EthContractCreationBytes.swift in Sources */,
 				BE28B9CA228991D800A7FBE4 /* IntegersProduct.swift in Sources */,
-				BE28B85F228991BB00A7FBE4 /* MainnetMetamaskNetwork.swift in Sources */,
 				BE28B94A228991D800A7FBE4 /* ABIUnsignedNumber.swift in Sources */,
 				BE28B9BE228991D800A7FBE4 /* TrimmedPrefixString.swift in Sources */,
 				BE28B95A228991D800A7FBE4 /* CachedBytes.swift in Sources */,
 				BE28B9E3228991D800A7FBE4 /* EthUnsignedTransactionBytes.swift in Sources */,
 				BE28B961228991D800A7FBE4 /* SizeBufferedBytes.swift in Sources */,
-				BE28B85D228991BB00A7FBE4 /* GanacheLocalNetwork.swift in Sources */,
 				BE28B97F228991D800A7FBE4 /* PendingBlockChainState.swift in Sources */,
 				BE28B93C228991D800A7FBE4 /* ComputedContractAddress.swift in Sources */,
 				BE28B95F228991D800A7FBE4 /* LastBytes.swift in Sources */,
@@ -1944,7 +1891,6 @@
 				BE28B970228991D800A7FBE4 /* BytesParameter.swift in Sources */,
 				BE28B9B9228991D800A7FBE4 /* UnprefixedHexString.swift in Sources */,
 				BE28B986228991D800A7FBE4 /* RLPAppendix.swift in Sources */,
-				BE28B862228991BB00A7FBE4 /* Actor.swift in Sources */,
 				BE28B98C228991D800A7FBE4 /* VerifiedProcedure.swift in Sources */,
 				BE28B9D1228991D800A7FBE4 /* BytesAsInteger.swift in Sources */,
 				BE28B943228991D800A7FBE4 /* DecodedABIString.swift in Sources */,
@@ -1967,7 +1913,6 @@
 				BE28B945228991D800A7FBE4 /* DecodedABIFixedBytes.swift in Sources */,
 				BE28B97E228991D800A7FBE4 /* ExactBlockChainState.swift in Sources */,
 				BE28B99A228991D800A7FBE4 /* StickyComputation.swift in Sources */,
-				BE28B7CB228991BB00A7FBE4 /* ViewController.swift in Sources */,
 				BE28B9C5228991D800A7FBE4 /* RandomNonce.swift in Sources */,
 				BE28B955228991D800A7FBE4 /* LeftPaddedBytes.swift in Sources */,
 				BE28B94F228991D800A7FBE4 /* ABIFixedBytes.swift in Sources */,
@@ -2031,6 +1976,7 @@
 				BE28BA812289EE6400A7FBE4 /* FirstByteTests.swift in Sources */,
 				BE28BA592289EE3E00A7FBE4 /* UnsignedNumbersEqualityTests.swift in Sources */,
 				BE28BA352289EB4800A7FBE4 /* EthAddressTests.swift in Sources */,
+				BE28BAB02289FB8F00A7FBE4 /* URL.swift in Sources */,
 				BE28BA1B2289CC8900A7FBE4 /* EncodedContractTests.swift in Sources */,
 				BE28BA4A2289EE2200A7FBE4 /* TrimmedPrefixStringTests.swift in Sources */,
 				BE28BA362289EB9E00A7FBE4 /* ComputedContractAddressTests.swift in Sources */,
@@ -2083,6 +2029,8 @@
 				BE28BA832289EE6400A7FBE4 /* ConcatenatedBytesTests.swift in Sources */,
 				BE28BA432289EE1D00A7FBE4 /* EthTransactionIT.swift in Sources */,
 				BE28BA632289EE4100A7FBE4 /* GethNetworkTests.swift in Sources */,
+				BE28BAB52289FB9800A7FBE4 /* Tim.swift in Sources */,
+				BE28BAB62289FB9800A7FBE4 /* Actor.swift in Sources */,
 				BE28BA702289EE4600A7FBE4 /* TernaryIntegerTests.swift in Sources */,
 				BE28BAA12289EEE800A7FBE4 /* ChainIDProcedureTests.swift in Sources */,
 				BE28BA6C2289EE4600A7FBE4 /* IntegersProductTests.swift in Sources */,
@@ -2110,6 +2058,7 @@
 				BE28BA742289EE4A00A7FBE4 /* JSONTypeErrorTests.swift in Sources */,
 				BE28BA302289E76400A7FBE4 /* ABIAddressTests.swift in Sources */,
 				BE28BA7F2289EE6400A7FBE4 /* LeadingCompactBytesTests.swift in Sources */,
+				BE28BAB12289FB9300A7FBE4 /* GanacheLocalNetwork.swift in Sources */,
 				BE28BA862289EE6400A7FBE4 /* TrailingCompactBytesTests.swift in Sources */,
 				BE28BA492289EE2200A7FBE4 /* UTF8StringTests.swift in Sources */,
 				BE28BA402289EE1800A7FBE4 /* ContractDeploymentAndCallIT.swift in Sources */,
@@ -2117,10 +2066,12 @@
 				BE28BA262289D95D00A7FBE4 /* ABIDecodingIT.swift in Sources */,
 				BE28BA502289EE2B00A7FBE4 /* EthRLPTests.swift in Sources */,
 				BE28BA922289EE6800A7FBE4 /* SimpleBooleanTests.swift in Sources */,
+				BE28BAB42289FB9800A7FBE4 /* SimpleActor.swift in Sources */,
 				BE28BA872289EE6400A7FBE4 /* BytesAtTests.swift in Sources */,
 				BE28BA682289EE4600A7FBE4 /* BytesAsIntegerTests.swift in Sources */,
 				BE28BAA32289EEE800A7FBE4 /* TransactionReceiptProcedureTests.swift in Sources */,
 				BE28BA9A2289EE6E00A7FBE4 /* MappedCollectionTests.swift in Sources */,
+				BE28BAB32289FB9300A7FBE4 /* MainnetMetamaskNetwork.swift in Sources */,
 				BE28BA242289D55600A7FBE4 /* DecodedABIVariableBytesTests.swift in Sources */,
 				BE28BA5C2289EE3E00A7FBE4 /* UnsignedNumbersExponentiationTests.swift in Sources */,
 				BE28BA932289EE6800A7FBE4 /* TernaryTests.swift in Sources */,
@@ -2133,6 +2084,7 @@
 				BE28BA372289EC9200A7FBE4 /* NumericBooleanTests.swift in Sources */,
 				BE28BA9D2289EE7200A7FBE4 /* EthContractCallTests.swift in Sources */,
 				BE28BA3C2289EE1800A7FBE4 /* EthDirectTransactionBytesTests.swift in Sources */,
+				BE28BAB22289FB9300A7FBE4 /* MainnetAlchemyNetwork.swift in Sources */,
 				BE28BA712289EE4600A7FBE4 /* IntegerTypeSizeTests.swift in Sources */,
 				BE28BA222289D21000A7FBE4 /* DecodedABIBooleanTests.swift in Sources */,
 				BE28BA562289EE3E00A7FBE4 /* UnsignedNumbersSumTests.swift in Sources */,
@@ -2146,12 +2098,14 @@
 				BE28BA8C2289EE6400A7FBE4 /* FirstBitTests.swift in Sources */,
 				BE28BA5E2289EE4100A7FBE4 /* MainnetInfuraMetamaskNetworkTests.swift in Sources */,
 				BE28BA0F2289A33900A7FBE4 /* QuantityParameterTests.swift in Sources */,
+				BE28BAB72289FB9800A7FBE4 /* Alice.swift in Sources */,
+				BE28BAB92289FB9C00A7FBE4 /* UnknownError.swift in Sources */,
 				BE28BA762289EE5200A7FBE4 /* EthGasEstimateTests.swift in Sources */,
-				BE28BA052289A32500A7FBE4 /* Web3SwiftTests.swift in Sources */,
 				BE28BA382289ECD500A7FBE4 /* TrueTests.swift in Sources */,
 				BE28BA522289EE2E00A7FBE4 /* StatesTests.swift in Sources */,
 				BE28BA792289EE6400A7FBE4 /* ReversedBytesTests.swift in Sources */,
 				BE28BA912289EE6800A7FBE4 /* AndTests.swift in Sources */,
+				BE28BAB82289FB9800A7FBE4 /* Bob.swift in Sources */,
 				BE28BA2A2289E03A00A7FBE4 /* DecodedABIDynamicCollectionTests.swift in Sources */,
 				BE28BA7B2289EE6400A7FBE4 /* SizeBufferedBytesTests.swift in Sources */,
 				BE28BA452289EE1D00A7FBE4 /* EthTransactionReceiptIT.swift in Sources */,
@@ -2172,25 +2126,6 @@
 			targetProxy = BE28BA082289A32500A7FBE4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		BE28B701228991BB00A7FBE4 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BE28B702228991BB00A7FBE4 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		BE28B703228991BB00A7FBE4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BE28B704228991BB00A7FBE4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BE28B6F62289909D00A7FBE4 /* Debug */ = {
