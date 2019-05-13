@@ -10,7 +10,7 @@
 
 import CryptoSwift
 import Foundation
-import secp256k1_ios
+import secp256k1
 
 private final class InvalidPrivateKeyError: DescribedError {
 
@@ -114,9 +114,7 @@ public final class EthPrivateKey: PrivateKey {
             ) == 1 else {
                 throw PublicKeySerializationError()
             }
-            return Data(
-                bytes: publicKey.dropFirst()
-            )
+            return Data(publicKey.dropFirst())
         }
     }
 

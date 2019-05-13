@@ -26,13 +26,9 @@ public final class ABIBoolean: ABIEncodedParameter {
             origin: LeftZeroesPaddedBytes(
                 origin: SimpleBytes{
                     if origin {
-                        return Data(
-                            bytes: [0x01]
-                        )
+                        return Data([0x01])
                     } else {
-                        return Data(
-                            bytes: [0x00]
-                        )
+                        return Data([0x00])
                     }
                 },
                 length: 32

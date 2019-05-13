@@ -45,11 +45,7 @@ public final class UTF8StringBytes: BytesScalar {
     `DescribedError` if something went wrong
     */
     public func value() throws -> Data {
-        return try Data(
-            bytes: Array(
-                string.value().utf8
-            )
-        )
+        return try Data(Array(string.value().utf8))
     }
 
 }
