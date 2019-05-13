@@ -9,13 +9,7 @@
 /* Begin PBXBuildFile section */
 		BE28B6F52289909D00A7FBE4 /* Web3Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = BE28B6F32289909D00A7FBE4 /* Web3Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE28B7CB228991BB00A7FBE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B700228991BB00A7FBE4 /* ViewController.swift */; };
-		BE28B7CC228991BB00A7FBE4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE28B701228991BB00A7FBE4 /* LaunchScreen.xib */; };
-		BE28B7CD228991BB00A7FBE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE28B703228991BB00A7FBE4 /* Main.storyboard */; };
-		BE28B7CE228991BB00A7FBE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE28B705228991BB00A7FBE4 /* Images.xcassets */; };
 		BE28B7CF228991BB00A7FBE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B706228991BB00A7FBE4 /* AppDelegate.swift */; };
-		BE28B7D0228991BB00A7FBE4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE28B707228991BB00A7FBE4 /* Info.plist */; };
-		BE28B7D1228991BB00A7FBE4 /* Web3Swift.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = BE28B708228991BB00A7FBE4 /* Web3Swift.xcworkspace */; };
-		BE28B7D2228991BB00A7FBE4 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BE28B709228991BB00A7FBE4 /* .swiftlint.yml */; };
 		BE28B7D3228991BB00A7FBE4 /* IntegersSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B70C228991BB00A7FBE4 /* IntegersSumTests.swift */; };
 		BE28B7D4228991BB00A7FBE4 /* IntegersQuotientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B70D228991BB00A7FBE4 /* IntegersQuotientTests.swift */; };
 		BE28B7D5228991BB00A7FBE4 /* BytesAsIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B70E228991BB00A7FBE4 /* BytesAsIntegerTests.swift */; };
@@ -142,7 +136,6 @@
 		BE28B84E228991BB00A7FBE4 /* EthContractCreationBytesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7A0228991BB00A7FBE4 /* EthContractCreationBytesTests.swift */; };
 		BE28B84F228991BB00A7FBE4 /* EthAutoAccountIT.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7A2228991BB00A7FBE4 /* EthAutoAccountIT.swift */; };
 		BE28B850228991BB00A7FBE4 /* EthGasEstimateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7A4228991BB00A7FBE4 /* EthGasEstimateTests.swift */; };
-		BE28B851228991BB00A7FBE4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE28B7A5228991BB00A7FBE4 /* Info.plist */; };
 		BE28B852228991BB00A7FBE4 /* UnsignedNumbersSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7A7228991BB00A7FBE4 /* UnsignedNumbersSumTests.swift */; };
 		BE28B853228991BB00A7FBE4 /* UnsignedNumbersQuotientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7A8228991BB00A7FBE4 /* UnsignedNumbersQuotientTests.swift */; };
 		BE28B854228991BB00A7FBE4 /* HexAsDecimalStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7A9228991BB00A7FBE4 /* HexAsDecimalStringTests.swift */; };
@@ -162,9 +155,7 @@
 		BE28B862228991BB00A7FBE4 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7BE228991BB00A7FBE4 /* Actor.swift */; };
 		BE28B863228991BB00A7FBE4 /* Alice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7BF228991BB00A7FBE4 /* Alice.swift */; };
 		BE28B864228991BB00A7FBE4 /* Bob.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7C0228991BB00A7FBE4 /* Bob.swift */; };
-		BE28B865228991BB00A7FBE4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BE28B7C1228991BB00A7FBE4 /* Podfile */; };
 		BE28B866228991BB00A7FBE4 /* UnknownError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B7C3228991BB00A7FBE4 /* UnknownError.swift */; };
-		BE28B867228991BB00A7FBE4 /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = BE28B7C4228991BB00A7FBE4 /* Podfile.lock */; };
 		BE28B93C228991D800A7FBE4 /* ComputedContractAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B869228991D500A7FBE4 /* ComputedContractAddress.swift */; };
 		BE28B93D228991D800A7FBE4 /* EthAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B86A228991D500A7FBE4 /* EthAddress.swift */; };
 		BE28B93E228991D800A7FBE4 /* EncodedABITuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B86C228991D500A7FBE4 /* EncodedABITuple.swift */; };
@@ -346,6 +337,7 @@
 		BE28B9EE228991D800A7FBE4 /* ArithmeticFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B939228991D800A7FBE4 /* ArithmeticFunctions.swift */; };
 		BE28B9EF228991D800A7FBE4 /* UnsignedNumbersDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B93A228991D800A7FBE4 /* UnsignedNumbersDifference.swift */; };
 		BE28B9F0228991D800A7FBE4 /* UnsignedNumbersProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B93B228991D800A7FBE4 /* UnsignedNumbersProduct.swift */; };
+		BE28B9F7228993DD00A7FBE4 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE28B9F6228993DD00A7FBE4 /* Nimble.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -708,6 +700,7 @@
 		BE28B939228991D800A7FBE4 /* ArithmeticFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArithmeticFunctions.swift; sourceTree = "<group>"; };
 		BE28B93A228991D800A7FBE4 /* UnsignedNumbersDifference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsignedNumbersDifference.swift; sourceTree = "<group>"; };
 		BE28B93B228991D800A7FBE4 /* UnsignedNumbersProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsignedNumbersProduct.swift; sourceTree = "<group>"; };
+		BE28B9F6228993DD00A7FBE4 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -715,6 +708,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE28B9F7228993DD00A7FBE4 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,6 +721,7 @@
 				BE28B6FE228991BB00A7FBE4 /* Example */,
 				BE28B6F22289909D00A7FBE4 /* Web3Swift */,
 				BE28B6F12289909D00A7FBE4 /* Products */,
+				BE28B9F3228993DD00A7FBE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1638,6 +1633,14 @@
 			path = NumberScalar;
 			sourceTree = "<group>";
 		};
+		BE28B9F3228993DD00A7FBE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE28B9F6228993DD00A7FBE4 /* Nimble.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1660,6 +1663,7 @@
 				BE28B6EC2289909D00A7FBE4 /* Sources */,
 				BE28B6ED2289909D00A7FBE4 /* Frameworks */,
 				BE28B6EE2289909D00A7FBE4 /* Resources */,
+				BE28B9F8228993EE00A7FBE4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1730,19 +1734,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE28B867228991BB00A7FBE4 /* Podfile.lock in Resources */,
-				BE28B7D2228991BB00A7FBE4 /* .swiftlint.yml in Resources */,
-				BE28B7D0228991BB00A7FBE4 /* Info.plist in Resources */,
-				BE28B865228991BB00A7FBE4 /* Podfile in Resources */,
-				BE28B7CE228991BB00A7FBE4 /* Images.xcassets in Resources */,
-				BE28B7CC228991BB00A7FBE4 /* LaunchScreen.xib in Resources */,
-				BE28B7CD228991BB00A7FBE4 /* Main.storyboard in Resources */,
-				BE28B7D1228991BB00A7FBE4 /* Web3Swift.xcworkspace in Resources */,
-				BE28B851228991BB00A7FBE4 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BE28B9F8228993EE00A7FBE4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nimble.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BE28B6EC2289909D00A7FBE4 /* Sources */ = {
@@ -2235,6 +2252,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Web3Swift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2260,6 +2281,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Web3Swift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
