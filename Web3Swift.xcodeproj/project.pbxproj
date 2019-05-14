@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE28B6F52289909D00A7FBE4 /* Web3Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = BE28B6F32289909D00A7FBE4 /* Web3Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE28B93C228991D800A7FBE4 /* ComputedContractAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B869228991D500A7FBE4 /* ComputedContractAddress.swift */; };
 		BE28B93D228991D800A7FBE4 /* EthAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B86A228991D500A7FBE4 /* EthAddress.swift */; };
 		BE28B93E228991D800A7FBE4 /* EncodedABITuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28B86C228991D500A7FBE4 /* EncodedABITuple.swift */; };
@@ -374,7 +373,6 @@
 
 /* Begin PBXFileReference section */
 		BE28B6F02289909D00A7FBE4 /* Web3Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Web3Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE28B6F32289909D00A7FBE4 /* Web3Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Web3Swift.h; sourceTree = "<group>"; };
 		BE28B6F42289909D00A7FBE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE28B70C228991BB00A7FBE4 /* IntegersSumTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegersSumTests.swift; sourceTree = "<group>"; };
 		BE28B70D228991BB00A7FBE4 /* IntegersQuotientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegersQuotientTests.swift; sourceTree = "<group>"; };
@@ -749,8 +747,8 @@
 				BE28BAC0228A034C00A7FBE4 /* Quick.framework */,
 				BE28B6F22289909D00A7FBE4 /* Web3Swift */,
 				BE28BA032289A32500A7FBE4 /* Web3SwiftTests */,
-				BE28B6F12289909D00A7FBE4 /* Products */,
 				BE28B9F3228993DD00A7FBE4 /* Frameworks */,
+				BE28B6F12289909D00A7FBE4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -795,7 +793,6 @@
 				BE28B926228991D700A7FBE4 /* TransactionHash */,
 				BE28B8AC228991D600A7FBE4 /* TransactionReceipt */,
 				BE28B8EC228991D700A7FBE4 /* Transactions */,
-				BE28B6F32289909D00A7FBE4 /* Web3Swift.h */,
 				BE28B6F42289909D00A7FBE4 /* Info.plist */,
 			);
 			path = Web3Swift;
@@ -1192,9 +1189,9 @@
 		BE28B86B228991D500A7FBE4 /* ABI */ = {
 			isa = PBXGroup;
 			children = (
-				BE28B86C228991D500A7FBE4 /* EncodedABITuple.swift */,
 				BE28B86D228991D500A7FBE4 /* Decoding */,
 				BE28B877228991D500A7FBE4 /* Parameters */,
+				BE28B86C228991D500A7FBE4 /* EncodedABITuple.swift */,
 				BE28B882228991D500A7FBE4 /* EncodedContract.swift */,
 				BE28B883228991D500A7FBE4 /* EncodedABIFunction.swift */,
 			);
@@ -1638,7 +1635,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE28B6F52289909D00A7FBE4 /* Web3Swift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
