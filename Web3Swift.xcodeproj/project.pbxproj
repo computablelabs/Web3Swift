@@ -344,6 +344,8 @@
 		BE28BABB2289FE7100A7FBE4 /* BigInt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE28BA132289A64B00A7FBE4 /* BigInt.framework */; };
 		BE28BABC2289FE7600A7FBE4 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE28BA112289A4E900A7FBE4 /* SwiftyJSON.framework */; };
 		BE28BABD2289FE7D00A7FBE4 /* secp256k1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE28BA172289A75F00A7FBE4 /* secp256k1.framework */; };
+		BE28BAC1228A034C00A7FBE4 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE28BABF228A034C00A7FBE4 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE28BAC2228A034C00A7FBE4 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE28BAC0228A034C00A7FBE4 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -355,6 +357,20 @@
 			remoteInfo = Web3Swift;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE28BABE228A032800A7FBE4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				BE28BAC1228A034C00A7FBE4 /* Nimble.framework in CopyFiles */,
+				BE28BAC2228A034C00A7FBE4 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BE28B6F02289909D00A7FBE4 /* Web3Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Web3Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -694,6 +710,8 @@
 		BE28BA132289A64B00A7FBE4 /* BigInt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BigInt.framework; path = Carthage/Build/iOS/BigInt.framework; sourceTree = "<group>"; };
 		BE28BA152289A6B700A7FBE4 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
 		BE28BA172289A75F00A7FBE4 /* secp256k1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = secp256k1.framework; path = Carthage/Build/iOS/secp256k1.framework; sourceTree = "<group>"; };
+		BE28BABF228A034C00A7FBE4 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		BE28BAC0228A034C00A7FBE4 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -727,6 +745,8 @@
 		BE28B6E62289909D00A7FBE4 = {
 			isa = PBXGroup;
 			children = (
+				BE28BABF228A034C00A7FBE4 /* Nimble.framework */,
+				BE28BAC0228A034C00A7FBE4 /* Quick.framework */,
 				BE28B6F22289909D00A7FBE4 /* Web3Swift */,
 				BE28BA032289A32500A7FBE4 /* Web3SwiftTests */,
 				BE28B6F12289909D00A7FBE4 /* Products */,
@@ -1652,6 +1672,7 @@
 				BE28B9FF2289A32500A7FBE4 /* Frameworks */,
 				BE28BA002289A32500A7FBE4 /* Resources */,
 				BE28BA1D2289CD6300A7FBE4 /* Carthage */,
+				BE28BABE228A032800A7FBE4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -1752,8 +1773,6 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/secp256k1.framework",
@@ -1763,8 +1782,6 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nimble.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Quick.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/CryptoSwift.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyJSON.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/secp256k1.framework",
