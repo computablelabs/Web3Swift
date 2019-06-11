@@ -14,16 +14,17 @@ import Quick
 
 final class ContractCallProcedureTests: XCTestCase {
 
+    //let network = MainnetInfuraNetwork()
+    let network = GethNetwork(url: "http://127.0.0.1:8545")
+    //let ethAddress = "0x86fa049857e0209aa7d9e616f7eb3b3b78ecfdb0"
+    let ethAddress = "0x77dc2A86f789F7FD6AabF446FB56f6F63ed24cEe"
+    
     func testEOSSupply() {
         expect{
             try ContractCallProcedure(
-                network: MainnetInfuraNetwork(),
+                network: self.network,
                 parameters: [
-                    "to" : BytesParameter(
-                        bytes: EthAddress(
-                            hex: "0x86fa049857e0209aa7d9e616f7eb3b3b78ecfdb0"
-                        )
-                    ),
+                    "to" : BytesParameter(bytes: EthAddress(hex: self.ethAddress)),
                     "data" : BytesParameter(
                         bytes: EncodedABIFunction(
                             signature: SimpleString(

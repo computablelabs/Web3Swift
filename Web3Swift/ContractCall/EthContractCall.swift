@@ -57,7 +57,7 @@ public final class EthContractCall: BytesScalar {
                     "to" : BytesParameter(
                         bytes: contractAddress
                     ),
-                    "data" : BytesParameter(
+                    "value" : BytesParameter(
                         bytes: functionCall
                     )
                 ]
@@ -90,7 +90,7 @@ public final class EthContractCall: BytesScalar {
                     "to" : BytesParameter(
                         bytes: contractAddress
                     ),
-                    "data" : BytesParameter(
+                    "value" : BytesParameter(
                         bytes: functionCall
                     )
                 ]
