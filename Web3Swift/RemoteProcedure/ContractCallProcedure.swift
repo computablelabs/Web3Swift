@@ -40,19 +40,26 @@ final public class ContractCallProcedure: RemoteProcedure {
     `DescribedError` if something went wrong
     */
     public func call() throws -> JSON {
-        return try JSON(
-            data: network.call(
-                method: "eth_call",
-                params: [
-                    ObjectParameter(
-                        dictionary: parameters
-                    ),
-                    TagParameter(
-                        state: PendingBlockChainState()
-                    )
-                ]
-            )
-        )
+        
+        Logger.debug("Contract Call: ")
+        let paramString = parameters.compactMap{ "\($0.key): \($0.value)" }.joined(separator: ", ")
+        Logger.debug("parameters: \(paramString)")
+        
+        let params = [ObjectParameter(dictionary: parameters),
+                      TagParameter(state: PendingBlockChainState())] as Array<EthParameter>
+        
+        // TODO: pull eth_call out to constants
+        let data = try network.call(method: "eth_call", params: params)
+        
+        Logger.debug("Contract call returned \(data.count) bytes")
+        
+        let json = try JSON(data: data)
+        
+        if json.rawString() != nil {
+            Logger.debug(json.rawString()!)
+        }
+        
+        return json
     }
 
 }

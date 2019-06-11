@@ -345,6 +345,7 @@
 		BE28BABD2289FE7D00A7FBE4 /* secp256k1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE28BA172289A75F00A7FBE4 /* secp256k1.framework */; };
 		BE28BAC1228A034C00A7FBE4 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE28BABF228A034C00A7FBE4 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE28BAC2228A034C00A7FBE4 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE28BAC0228A034C00A7FBE4 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE60DE6322AFDEDC00BB7032 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE60DE6222AFDEDC00BB7032 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -710,6 +711,7 @@
 		BE28BA172289A75F00A7FBE4 /* secp256k1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = secp256k1.framework; path = Carthage/Build/iOS/secp256k1.framework; sourceTree = "<group>"; };
 		BE28BABF228A034C00A7FBE4 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		BE28BAC0228A034C00A7FBE4 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		BE60DE6222AFDEDC00BB7032 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -764,6 +766,7 @@
 		BE28B6F22289909D00A7FBE4 /* Web3Swift */ = {
 			isa = PBXGroup;
 			children = (
+				BE60DE6122AFDECA00BB7032 /* Logging */,
 				BE28B86B228991D500A7FBE4 /* ABI */,
 				BE28B8BB228991D600A7FBE4 /* Account */,
 				BE28B868228991D500A7FBE4 /* Address */,
@@ -1628,6 +1631,14 @@
 			path = Web3SwiftTests;
 			sourceTree = "<group>";
 		};
+		BE60DE6122AFDECA00BB7032 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				BE60DE6222AFDEDC00BB7032 /* Logger.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1747,6 +1758,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/BigInt.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/secp256k1.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyBeaver.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -1756,6 +1768,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BigInt.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/CryptoSwift.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/secp256k1.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyBeaver.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1773,6 +1786,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/secp256k1.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/BigInt.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -1782,6 +1797,8 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyJSON.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/secp256k1.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BigInt.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Quick.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nimble.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1929,6 +1946,7 @@
 				BE28B9C5228991D800A7FBE4 /* RandomNonce.swift in Sources */,
 				BE28B955228991D800A7FBE4 /* LeftPaddedBytes.swift in Sources */,
 				BE28B94F228991D800A7FBE4 /* ABIFixedBytes.swift in Sources */,
+				BE60DE6322AFDEDC00BB7032 /* Logger.swift in Sources */,
 				BE28B9D2228991D800A7FBE4 /* EthInteger.swift in Sources */,
 				BE28B9D3228991D800A7FBE4 /* TernaryInteger.swift in Sources */,
 				BE28B9BC228991D800A7FBE4 /* UTF8String.swift in Sources */,
