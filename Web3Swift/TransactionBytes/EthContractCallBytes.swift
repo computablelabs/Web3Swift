@@ -49,6 +49,26 @@ public final class EthContractCallBytes: BytesScalar {
             contractCall: functionCall
         )
     }
+    
+    public init(
+        networkID: IntegerScalar,
+        transactionsCount: BytesScalar,
+        gasPrice: BytesScalar,
+        gasEstimate: BytesScalar,
+        senderKey: PrivateKey,
+        contractAddress: BytesScalar,
+        functionCall: BytesScalar
+        ) {
+        self.origin = EthTransactionBytes(
+            networkID: networkID,
+            transactionsCount: transactionsCount,
+            gasPrice: gasPrice,
+            gasEstimate: gasEstimate,
+            senderKey: senderKey,
+            recipientAddress: contractAddress,
+            contractCall: functionCall
+        )
+    }
 
     /**
     Ctor
@@ -122,6 +142,68 @@ public final class EthContractCallBytes: BytesScalar {
             senderKey: senderKey,
             contractAddress: contractAddress,
             weiAmount: weiAmount,
+            functionCall: functionCall
+        )
+    }
+    
+    public convenience init(
+        network: Network,
+        senderKey: PrivateKey,
+        contractAddress: BytesScalar,
+        functionCall: BytesScalar
+        ) {
+        let senderAddress = CachedBytes(
+            origin: SimpleBytes{
+                try senderKey.address().value()
+            }
+        )
+        let contractAddress = CachedBytes(
+            origin: contractAddress
+        )
+        let gasPrice = CachedBytes(
+            origin: EthGasPrice(
+                network: network
+            )
+        )
+        let functionCall = CachedBytes(
+            origin: functionCall
+        )
+        self.init(
+            networkID: CachedInteger(
+                origin: NetworkID(
+                    network: network
+                )
+            ),
+            transactionsCount: CachedBytes(
+                origin: EthNumber(
+                    hex: SimpleBytes{
+                        try EthTransactions(
+                            network: network,
+                            address: senderAddress,
+                            blockChainState: PendingBlockChainState()
+                            ).count().value()
+                    }
+                )
+            ),
+            gasPrice: gasPrice,
+            gasEstimate: CachedBytes(
+                origin: EthGasEstimate(
+                    network: network,
+                    senderAddress: senderAddress,
+                    recipientAddress: contractAddress,
+                    gasEstimate: EthGasEstimate(
+                        network: network,
+                        senderAddress: senderAddress,
+                        recipientAddress: contractAddress,
+                        gasPrice: gasPrice,
+                        contractCall: functionCall
+                    ),
+                    gasPrice: gasPrice,
+                    contractCall: functionCall
+                )
+            ),
+            senderKey: senderKey,
+            contractAddress: contractAddress,
             functionCall: functionCall
         )
     }
