@@ -47,6 +47,25 @@ public final class EthDirectTransactionBytes: BytesScalar {
             contractCall: EmptyBytes()
         )
     }
+    
+    public init(
+        networkID: IntegerScalar,
+        transactionsCount: BytesScalar,
+        gasPrice: BytesScalar,
+        gasEstimate: BytesScalar,
+        senderKey: PrivateKey,
+        recipientAddress: BytesScalar
+        ) {
+        self.origin = EthTransactionBytes(
+            networkID: networkID,
+            transactionsCount: transactionsCount,
+            gasPrice: gasPrice,
+            gasEstimate: gasEstimate,
+            senderKey: senderKey,
+            recipientAddress: recipientAddress,
+            contractCall: EmptyBytes()
+        )
+    }
 
     /**
     Ctor
@@ -103,6 +122,47 @@ public final class EthDirectTransactionBytes: BytesScalar {
             senderKey: senderKey,
             recipientAddress: recipientAddress,
             weiAmount: weiAmount
+        )
+    }
+    
+    public convenience init(network: Network, senderKey: PrivateKey, recipientAddress: BytesScalar) {
+        
+        let senderAddress = CachedBytes(
+            origin: SimpleBytes{
+                try senderKey.address().value()
+            }
+        )
+        
+        let gasPrice = CachedBytes(origin: EthGasPrice(network: network))
+        
+        self.init(
+            networkID: CachedInteger(
+                origin: NetworkID(
+                    network: network
+                )
+            ),
+            transactionsCount: CachedBytes(
+                origin: EthNumber(
+                    hex: SimpleBytes{
+                        try EthTransactions(
+                            network: network,
+                            address: senderAddress,
+                            blockChainState: PendingBlockChainState()
+                            ).count().value()
+                    }
+                )
+            ),
+            gasPrice: gasPrice,
+            gasEstimate: CachedBytes(
+                origin: EthGasEstimate(
+                    network: network,
+                    senderAddress: senderAddress,
+                    recipientAddress: recipientAddress,
+                    gasPrice: gasPrice
+                )
+            ),
+            senderKey: senderKey,
+            recipientAddress: recipientAddress
         )
     }
 

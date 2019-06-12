@@ -67,6 +67,30 @@ public final class EthGasEstimate: BytesScalar {
             )
         )
     }
+    
+    public convenience init(
+        network: Network,
+        senderAddress: BytesScalar,
+        gasPrice: BytesScalar,
+        contractCall: BytesScalar
+        ) {
+        self.init(
+            estimationProcedure: EstimateGasProcedure(
+                network: network,
+                parameters: [
+                    "from" : BytesParameter(
+                        bytes: senderAddress
+                    ),
+                    "gasPrice" : QuantityParameter(
+                        number: gasPrice
+                    ),
+                    "data" : BytesParameter(
+                        bytes: contractCall
+                    )
+                ]
+            )
+        )
+    }
 
     /**
     Ctor
@@ -105,6 +129,30 @@ public final class EthGasEstimate: BytesScalar {
             )
         )
     }
+    
+    public convenience init(
+        network: Network,
+        senderAddress: BytesScalar,
+        recipientAddress: BytesScalar,
+        gasPrice: BytesScalar
+        ) {
+        self.init(
+            estimationProcedure: EstimateGasProcedure(
+                network: network,
+                parameters: [
+                    "from" : BytesParameter(
+                        bytes: senderAddress
+                    ),
+                    "to" : BytesParameter(
+                        bytes: recipientAddress
+                    ),
+                    "gasPrice" : QuantityParameter(
+                        number: gasPrice
+                    )
+                ]
+            )
+        )
+    }
 
     /**
     Ctor
@@ -140,6 +188,34 @@ public final class EthGasEstimate: BytesScalar {
                     ),
                     "value" : QuantityParameter(
                         number: weiAmount
+                    ),
+                    "data" : BytesParameter(
+                        bytes: contractCall
+                    )
+                ]
+            )
+        )
+    }
+    
+    public convenience init(
+        network: Network,
+        senderAddress: BytesScalar,
+        recipientAddress: BytesScalar,
+        gasPrice: BytesScalar,
+        contractCall: BytesScalar
+        ) {
+        self.init(
+            estimationProcedure: EstimateGasProcedure(
+                network: network,
+                parameters: [
+                    "from" : BytesParameter(
+                        bytes: senderAddress
+                    ),
+                    "to" : BytesParameter(
+                        bytes: recipientAddress
+                    ),
+                    "gasPrice" : QuantityParameter(
+                        number: gasPrice
                     ),
                     "data" : BytesParameter(
                         bytes: contractCall
@@ -191,6 +267,34 @@ public final class EthGasEstimate: BytesScalar {
             )
         )
     }
+    
+    public convenience init(
+        network: Network,
+        senderAddress: BytesScalar,
+        gasEstimate: BytesScalar,
+        gasPrice: BytesScalar,
+        contractCall: BytesScalar
+        ) {
+        self.init(
+            estimationProcedure: EstimateGasProcedure(
+                network: network,
+                parameters: [
+                    "from" : BytesParameter(
+                        bytes: senderAddress
+                    ),
+                    "gas" : QuantityParameter(
+                        number: gasEstimate
+                    ),
+                    "gasPrice" : QuantityParameter(
+                        number: gasPrice
+                    ),
+                    "data" : BytesParameter(
+                        bytes: contractCall
+                    )
+                ]
+            )
+        )
+    }
 
     /**
     Ctor
@@ -231,6 +335,38 @@ public final class EthGasEstimate: BytesScalar {
                     ),
                     "value" : QuantityParameter(
                         number: weiAmount
+                    ),
+                    "data" : BytesParameter(
+                        bytes: contractCall
+                    )
+                ]
+            )
+        )
+    }
+    
+    public convenience init(
+        network: Network,
+        senderAddress: BytesScalar,
+        recipientAddress: BytesScalar,
+        gasEstimate: BytesScalar,
+        gasPrice: BytesScalar,
+        contractCall: BytesScalar
+        ) {
+        self.init(
+            estimationProcedure: EstimateGasProcedure(
+                network: network,
+                parameters: [
+                    "from" : BytesParameter(
+                        bytes: senderAddress
+                    ),
+                    "to" : BytesParameter(
+                        bytes: recipientAddress
+                    ),
+                    "gas" : QuantityParameter(
+                        number: gasEstimate
+                    ),
+                    "gasPrice" : QuantityParameter(
+                        number: gasPrice
                     ),
                     "data" : BytesParameter(
                         bytes: contractCall
