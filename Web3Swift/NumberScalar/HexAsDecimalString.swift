@@ -22,9 +22,7 @@ public final class HexAsDecimalString: StringScalar {
     - parameters:
         - hex: hexadecimal representation of a number
     */
-    public init(
-        hex: BytesScalar
-    ) {
+    public init(hex: BytesScalar) {
         self.hex = hex
     }
 
@@ -33,12 +31,11 @@ public final class HexAsDecimalString: StringScalar {
     Decimal string representation of a hexadecimal representation
     */
     public func value() throws -> String {
-        return try String(
-            BigUInt(
-                hex.value()
-            ),
-            radix: 10
-        )
+        return try String(BigUInt(hex.value()), radix: 10)
+    }
+    
+    public func bigIntValue() throws -> BigUInt {
+        return try BigUInt(hex.value())
     }
 
 }
