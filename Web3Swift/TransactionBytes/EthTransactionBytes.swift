@@ -85,14 +85,25 @@ public final class EthTransactionBytes: BytesScalar {
     `DescribedError` if something went wrong
     */
     public func value() throws -> Data {
-        let transactionParameters: [RLP] = [
-            EthRLP(number: transactionsCount),
-            EthRLP(number: gasPrice),
-            EthRLP(number: gasEstimate),
-            SimpleRLP(bytes: recipientAddress),
-            EthRLP(number: weiAmount!),
-            SimpleRLP(bytes: contractCall)
-        ]
+        var transactionParameters: [RLP]
+        if weiAmount != nil {
+            transactionParameters = [
+                EthRLP(number: transactionsCount),
+                EthRLP(number: gasPrice),
+                EthRLP(number: gasEstimate),
+                SimpleRLP(bytes: recipientAddress),
+                EthRLP(number: weiAmount!),
+                SimpleRLP(bytes: contractCall)
+            ]
+        } else {
+            transactionParameters = [
+                EthRLP(number: transactionsCount),
+                EthRLP(number: gasPrice),
+                EthRLP(number: gasEstimate),
+                SimpleRLP(bytes: recipientAddress),
+                SimpleRLP(bytes: contractCall)
+            ]
+        }
         let signature = SECP256k1Signature(
             digest: Keccak256Bytes(
                 origin: SimpleRLP(
@@ -140,5 +151,4 @@ public final class EthTransactionBytes: BytesScalar {
             ]
         ).value()
     }
-
 }
