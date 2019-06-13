@@ -30,7 +30,7 @@ final class GetGasPriceProcedureTests: XCTestCase {
         expect{
             try EthInteger(
                 hex: GetGasPriceProcedure(
-                    network: MainnetInfuraNetwork()
+                    network: GethNetwork(url: "http://127.0.0.1:8545")
                 ).call()["result"].string()
             ).value()
         }.to(

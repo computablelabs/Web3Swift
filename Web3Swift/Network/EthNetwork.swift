@@ -100,13 +100,18 @@ public class EthNetwork: Network {
         Logger.debug("request body JSON: ")
         Logger.debug(requestBody.rawString()! as String)
         
-        return try session.data(
-            from: URLPostRequest(
-                url: url,
-                body: requestBody.rawData(),
-                headers: headers
-            ).toURLRequest()
-        )
+        let request = try URLPostRequest(url: url,
+                                         body: requestBody.rawData(),
+                                         headers: headers).toURLRequest()
+        
+        let rawData = try session.data(from: request)
+        
+        if let json = try JSONSerialization.jsonObject(with: rawData, options: []) as? NSDictionary {
+            Logger.debug("response JSON: ")
+            Logger.debug(json)
+        }
+        
+        return rawData
     }
     
 }
