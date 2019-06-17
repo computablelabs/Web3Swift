@@ -34,7 +34,7 @@ public final class HexAsDecimalString: StringScalar {
         return try String(BigUInt(hex.value()), radix: 10)
     }
     
-    public func bigIntValue() throws -> BigUInt {
+    public func bigUIntValue() throws -> BigUInt {
         return try BigUInt(hex.value())
     }
 
