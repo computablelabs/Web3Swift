@@ -20,7 +20,7 @@ public final class EthTransactionBytes: BytesScalar {
     private let gasEstimate: BytesScalar
     private let senderKey: PrivateKey
     private let recipientAddress: BytesScalar
-    private let weiAmount: BytesScalar
+    private let weiAmount: BytesScalar?
     private let contractCall: BytesScalar
 
     /**
@@ -55,6 +55,25 @@ public final class EthTransactionBytes: BytesScalar {
         self.weiAmount = weiAmount
         self.contractCall = contractCall
     }
+    
+    internal init(
+        networkID: IntegerScalar,
+        transactionsCount: BytesScalar,
+        gasPrice: BytesScalar,
+        gasEstimate: BytesScalar,
+        senderKey: PrivateKey,
+        recipientAddress: BytesScalar,
+        contractCall: BytesScalar
+        ) {
+        self.networkID = networkID
+        self.transactionsCount = transactionsCount
+        self.gasPrice = gasPrice
+        self.gasEstimate = gasEstimate
+        self.senderKey = senderKey
+        self.recipientAddress = recipientAddress
+        self.contractCall = contractCall
+        self.weiAmount = nil
+    }
 
     /**
     It should be noted that 35 is the magic number suggested by EIP155 https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md
@@ -66,14 +85,25 @@ public final class EthTransactionBytes: BytesScalar {
     `DescribedError` if something went wrong
     */
     public func value() throws -> Data {
-        let transactionParameters: [RLP] = [
-            EthRLP(number: transactionsCount),
-            EthRLP(number: gasPrice),
-            EthRLP(number: gasEstimate),
-            SimpleRLP(bytes: recipientAddress),
-            EthRLP(number: weiAmount),
-            SimpleRLP(bytes: contractCall)
-        ]
+        var transactionParameters: [RLP]
+        if weiAmount != nil {
+            transactionParameters = [
+                EthRLP(number: transactionsCount),
+                EthRLP(number: gasPrice),
+                EthRLP(number: gasEstimate),
+                SimpleRLP(bytes: recipientAddress),
+                EthRLP(number: weiAmount!),
+                SimpleRLP(bytes: contractCall)
+            ]
+        } else {
+            transactionParameters = [
+                EthRLP(number: transactionsCount),
+                EthRLP(number: gasPrice),
+                EthRLP(number: gasEstimate),
+                SimpleRLP(bytes: recipientAddress),
+                SimpleRLP(bytes: contractCall)
+            ]
+        }
         let signature = SECP256k1Signature(
             digest: Keccak256Bytes(
                 origin: SimpleRLP(
@@ -121,5 +151,4 @@ public final class EthTransactionBytes: BytesScalar {
             ]
         ).value()
     }
-
 }

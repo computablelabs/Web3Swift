@@ -1,0 +1,7 @@
+github "Quick/Quick"
+github "Quick/Nimble"
+github "SwiftyJSON/SwiftyJSON" ~> 4.0
+github "attaswift/BigInt" ~> 4.0
+github "krzyzanowskim/CryptoSwift"
+github "Boilertalk/secp256k1.swift"
+github "SwiftyBeaver/SwiftyBeaver"

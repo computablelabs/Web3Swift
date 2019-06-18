@@ -9,6 +9,9 @@
 //
 
 import Foundation
+import SwiftyBeaver
+
+let log = SwiftyBeaver.self
 
 /**
     Contract call response that is simulated on the node. This call doesn't

@@ -82,22 +82,36 @@ public class EthNetwork: Network {
                 url: self.url
             )
         }
-        return try session.data(
-            from: URLPostRequest(
-                url: url,
-                body: JSON(
-                    dictionary: [
-                        "jsonrpc" : "2.0",
-                        "method" : method,
-                        "params" : params.map {
-                            try $0.value()
-                        },
-                        "id" : 16180
-                    ]
-                ).rawData(),
-                headers: headers
-            ).toURLRequest()
-        )
+        
+        Logger.debug("Calling evm method: \(method)")
+        
+        // TODO: pull keys out to constants
+        let bodyDictionary = [
+            "jsonrpc" : "2.0",
+            "method" : method,
+            "params" : try params.map {
+                try $0.value()
+            },
+            "id" : 16180
+        ] as [String : Any]
+        
+        let requestBody = JSON(dictionary: bodyDictionary)
+        
+        Logger.debug("request body JSON: ")
+        Logger.debug(requestBody.rawString()! as String)
+        
+        let request = try URLPostRequest(url: url,
+                                         body: requestBody.rawData(),
+                                         headers: headers).toURLRequest()
+        
+        let rawData = try session.data(from: request)
+        
+        if let json = try JSONSerialization.jsonObject(with: rawData, options: []) as? NSDictionary {
+            Logger.debug("response JSON: ")
+            Logger.debug(json)
+        }
+        
+        return rawData
     }
     
 }

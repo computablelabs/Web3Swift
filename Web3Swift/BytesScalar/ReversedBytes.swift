@@ -33,8 +33,7 @@ public final class ReversedBytes: BytesScalar {
     `DescribedError` if something went wrong
     */
     public func value() throws -> Data {
-        return try Data(
-            bytes: origin.value().reversed()
+        return try Data(origin.value().reversed()
         )
     }
 
